@@ -10,8 +10,9 @@ O projeto atinge a excelência ao cobrir todos os requisitos obrigatórios e a m
 
 O projeto segue estritamente o princípio de Separação de Responsabilidades (S.O.L.I.D.), com uma arquitetura coesa e modular, garantindo fácil manutenção e testes.
 
+```
 pdf-processor-llm/ ├── src/ │   ├── cli/ │   │   └── arguments.py # Leitura e parsing de argumentos CLI (argparse) │   ├── llm/ │   │   ├── model.py # Carregamento do modelo LLM local (sshleifer/distilbart-cnn-12-6) │   │   └── summarize.py # Lógica de geração do resumo e tratamento de PDF grandes (truncation) │   ├── pdf/ │   │   ├── extractor.py # Análise de Métricas, Extração de Texto e Detecção de Títulos (Heurística Robusta) │   │   └── images.py # Extração de Imagens (Com tratamento de exceção robusto para XREFs falsos) │   ├── utils/ │   │   ├── files.py # Funções auxiliares de I/O (tamanho em bytes, etc.) │   │   ├── report.py # Geração e organização do relatório unificado em Markdown │   │   └── text.py # Funções auxiliares de processamento de texto (tokenização, stopwords, frequência) │   └── main.py # Orquestrador principal (ponto de entrada) e fluxo de trabalho └── requirements.txt # Dependências do projeto (PyMuPDF, torch, transformers)
-
+```
 ---
 
 ## 3. Instalação e Uso
