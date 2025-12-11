@@ -1,0 +1,5 @@
+# Dependência para manipulação de PDF (Requisito 1 e 2)
+PyMuPDF
+# Dependências para LLM Local (Requisito 3)
+torch
+transformers

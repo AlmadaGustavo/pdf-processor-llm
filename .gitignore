@@ -1,0 +1,42 @@
+# Arquivos de Sistema
+.DS_Store
+Thumbs.db
+
+# Virtual Environment (Ambiente Virtual)
+# Assume-se que o ambiente virtual é 'venv' ou está na raiz.
+venv/
+env/
+.env
+
+# Python Bytecode e Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Cache de Testes
+.pytest_cache/
+
+# DEPENDÊNCIAS DE CACHE E INSTALAÇÃO
+*.egg-info/
+dist/
+build/
+
+# IDEs - JetBrains/PyCharm
+.idea/
+
+# IDEs - VS Code
+.vscode/
+
+# LOGS E DADOS GERADOS PELO PROJETO
+# 1. Diretório de Saída (Contém relatórios e imagens)
+output/
+
+# 2. Cache do LLM/Hugging Face
+.huggingface/
+.cache/
+hf_cache/
+
+# Logs e arquivos de dados
+*.log
+*.sqlite3
