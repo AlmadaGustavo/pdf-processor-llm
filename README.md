@@ -68,3 +68,24 @@ Aplicações de Aplicativos Móveis: Um’so Mapeamento Sistemático da Literatu
 
 [RELATÓRIO]: Gerando relatório final em Markdown...
 [RELATÓRIO]: Salvo com sucesso em: output\MSL_1 - Documentos Google\relatorio_analise.md
+
+## 4. O que gostaria que fosse avaliado
+    
+Gostaria que a avaliação se concentrasse nos seguintes pilares de qualidade, que demonstram o domínio das melhores práticas de Engenharia de Software e o atendimento completo aos requisitos obrigatórios e opcionais avançados:
+
+1. Arquitetura e Engenharia de Software (Modularização)
+Modularização e Arquitetura (SOLID): O código está estritamente organizado em módulos de responsabilidade única (src/cli, src/llm, src/pdf, src/utils), o que garante a coesão, facilita a manutenção e permite a escalabilidade.
+
+Visibilidade e Logs: O código utiliza logs (mensagens informativas/debug no console) de forma estratégica, oferecendo total visibilidade do fluxo de execução, desde o carregamento do modelo até o debug da heurística de extração de títulos.
+
+Controle de Versão: Inclusão de um arquivo .gitignore seguindo as melhores práticas, ignorando virtual environments e os grandes diretórios de saída (output/).
+
+2. Recursos Avançados e Robustez
+LLM Local: Implementação do resumo utilizando um modelo LLM rodando localmente (sshleifer/distilbart-cnn-12-6), um requisito cumprido com o tratamento de truncation para documentos longos.
+
+Tratamento de Imagens Robusto: A função de extração de imagens inclui tratamento de exceção (try/except) para ignorar XREFs falsos (not an image), evitando crashes e garantindo que apenas arquivos de imagem válidos sejam salvos.
+
+Detecção de Estrutura: Implementação de uma heurística de títulos aprimorada que calcula a fonte base do corpo do texto e usa essa métrica para identificar títulos de forma precisa.
+
+3. Organização do Output
+Salvamento Organizado do Relatório: O projeto gera um relatório final unificado em Markdown (relatorio_analise.md) e salva este documento, juntamente com as imagens extraídas, em um subdiretório dedicado dentro de output/, nomeado a partir do PDF de entrada, garantindo a organização do projeto."
